@@ -347,7 +347,14 @@ a{
     color: #4D5053;
 }
 .banner__blog {
-    background-image: url(./img/Banner_blog.jpg);
+    background-image: url(img/Banner_blog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 178px; 
+}
+.banner__project {
+    background-image: url(img/Banner_project.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -522,4 +529,11 @@ a{
 .blog_details__tags_box .tag_checkbox:checked + .tag_label {
     background-color: #292F36;
     color: white;
+}
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.post{
+    flex-grow: 1;
 }

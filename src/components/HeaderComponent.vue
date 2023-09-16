@@ -6,7 +6,8 @@
         </a>
         <nav class="header__menu">
             <a href="index.html" class="header__menu_link">Home</a>
-            <a href="blogDetails.html" class="header__menu_link">Project</a>
+            <a href="project.html" class="header__menu_link">Project</a>
+            <a href="blogDetails.html" class="header__menu_link">Blog Details</a>
             <a href="blog.html" class="header__menu_link">Blog</a>
         </nav>
     </div>
