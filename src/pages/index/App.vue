@@ -1,4 +1,6 @@
 <template>
+  <p>{{ counter }}</p>
+  <button @click="increment">+</button>
   <AdditionalTask />
   <HeaderComponent />
   <section class="banner center">
@@ -167,14 +169,22 @@
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
-import AdditionalTask from '@/components/AdditionalTask.vue'
+import AdditionalTask from '@/components/AdditionalTask.vue';
+import { mapMutations, mapState } from 'vuex';
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     FooterComponent,
     AdditionalTask
+  },
+  methods: {
+    ...mapMutations(['increment'])
+  },
+  computed: {
+    ...mapState(['counter'])
   }
+
 }
 </script>
 
