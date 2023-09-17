@@ -537,3 +537,34 @@ a{
 .post{
     flex-grow: 1;
 }
+.notFound_box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.notFound_box_img {
+    width: 50%;
+    border-radius: 0 0 0 353px;
+}
+.notFound_box__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+.notFound_box__content_title{
+    font-size: 250px;
+    font-weight: 400;
+    line-height: 313px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #CDA274;
+}
+.notFound_box__content_desc {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #292F36;
+}

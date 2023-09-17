@@ -1,4 +1,7 @@
 <template>
+    <section class="banner__blogDetails">
+        <img src="img/Banner_blog.jpg" alt="baner" class="banner__blogDetails_img">
+    </section>
     <section class="blog_details center">
         <div class="blog_details__box">
             <div v-for="item in filterArray" :key="item.id" class="blog_details__posts">
@@ -49,7 +52,9 @@
 </template>
   
 <script>
+
 export default {
+    name: 'App',
     data() {
         return {
             activeTag: "",
@@ -111,7 +116,6 @@ export default {
             ]
         }
     },
-    name: 'FilterPost',
     computed: {
         filterArray() {
             return this.posts.filter(item => item.tags.includes(this.activeTag));
@@ -119,6 +123,6 @@ export default {
     },
 }
 </script>
-
+  
 <style scoped src="@/assets/style.css"></style>
   

@@ -1,5 +1,4 @@
 <template>
-  <HeaderComponent />
   <section class="banner__project">
     <div class="banner__blog_content">
       <h2 class="banner__blog_title">Our Project</h2>
@@ -29,21 +28,14 @@
       <CardComponent :info="post" />
     </div>
   </div>
-
-
-  <FooterComponent />
 </template>
-
 <script>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
+
 import CardComponent from '@/components/CardComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderComponent,
-    FooterComponent,
     CardComponent
   },
   data() {

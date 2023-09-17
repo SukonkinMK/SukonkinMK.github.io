@@ -1,4 +1,4 @@
-# hello-world
+# hwproject
 
 ## Project setup
 ```
